@@ -4,7 +4,7 @@
 
 
 
-//定义类啊啊大师
+//定义类啊啊大
 class Point {
     constructor(x, y) {
         this.x = x;
