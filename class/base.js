@@ -4,6 +4,7 @@
 
 
 
+
 //定义类
 class Point {
     constructor(x, y) {
