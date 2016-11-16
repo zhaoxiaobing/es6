@@ -5,7 +5,7 @@
 
 
 
-//定义类
+//定义类12344
 class Point {
     constructor(x, y) {
         this.x = x;
