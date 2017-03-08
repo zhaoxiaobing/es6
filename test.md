@@ -1,10 +1,12 @@
 # Array 对象
 
 
-#### concat() 
-1. 该方法用于连接两个或多个数组。  
-2. 该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本。
-3. 语法: arrayObject.concat(arrayX,arrayX,......,arrayX); arrayX	必需。该参数可以是具体的值，也可以是数组对象。可以是任意多个。
+### concat()
+> 该方法用于连接两个或多个数组。  
+> 该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本.  
+
+> 语法： arrayObject.concat(arrayX,arrayX,......,arrayX);  
+> 参数： arrayX	必需。该参数可以是具体的值，也可以是数组对象。可以是任意多个。
 
 ```javascript
     var arr1 = [1,2,3];
@@ -24,8 +26,28 @@
 
 ```javascript
     var arr1 = ['George','John','Thomas'];
-    arr.join();  //"George,John,Thomas"
-    arr.join(".");  //"George.John.Thomas"
+    arr1.join();  //"George,John,Thomas"
+    arr1.join(".");  //"George.John.Thomas"
+    arr1.join("--");  //"George--John--Thomas"
 ```
 
+#### pop()
+
+1. pop() 方法用于删除并返回数组的最后一个元素。
+2. arrayObject.pop(); 返回arrayObject 的最后一个元素。
+3. pop() 方法将删除 arrayObject 的最后一个元素，把数组长度减 1，并且返回它删除的元素的值。如果数组已经为空，则 pop() 不改变数组，并返回 undefined 值。
+
+```javascript
+    var arr1 = ['George','John','Thomas'];
+    arr1.pop(); //Thomas
+    arr1.pop(); //John
+    arr1.pop(); //George
+    arr1.pop(); //undefined
+    console.log(arr1); //[]
+```
+
+#### push()
+
+1. push() 方法可向数组的末尾添加一个或多个元素，并返回新的长度。
+2. arrayObject.push(newelement1,newelement2,....,newelementX);newelement1	必需。要添加到数组的第一个元素。newelement2	可选。要添加到数组的第二个元素。newelementX	可选。可添加多个元素。
 
